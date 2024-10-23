@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <form class="login" action="Api/user_register.cgi" method="POST">
+        <div class="form">
+            <label for="">Nom :</label>
+            <input type="text" name="nom">
+        </div>
+        <div class="form">
+            <label for="">Prenom :</label>
+            <input type="text" name="prenom" id="">
+        </div>
+        <div class="form">
+            <label for="date_naissance">Date de Naissance :</label><br>
+            <input type="date" id="date_naissance" name="date_naissance" required><br><br>
+        </div>
+        <div class="form">
+            <label for="sexe">Sexe :</label><br>
+            <input type="radio" id="homme" name="sexe" value="homme" required>
+            <label for="homme">Homme</label><br>
+            <input type="radio" id="femme" name="sexe" value="femme">
+            <label for="femme">Femme</label><br>
+            <input type="radio" id="autre" name="sexe" value="autre">
+            <label for="autre">Autre</label><br><br>
+        </div>
+        <div class="action">
+            <button type="submit">S'INSCRIRE</button>
+        </div>
+    </form>
+</body>
+</html>
